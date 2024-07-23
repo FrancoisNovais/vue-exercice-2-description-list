@@ -61,7 +61,7 @@ const fourthPerson = {
     <h1>Description list</h1>
     <div class="cards">
       <div>
-        <img src=".//assets/imgs/persons/emily-parker.jpg" alt="" />
+        <img src="./assets/imgs/persons/emily-parker.jpg" alt="" />
         <h2>{{ firstPerson.firstname }} {{ firstPerson.lastname }}</h2>
         <p>
           {{ firstPerson.gender === 'female' ? 'She' : 'He' }} is a {{ firstPerson.age }}-year-old
@@ -80,7 +80,7 @@ const fourthPerson = {
       </div>
 
       <div>
-        <img src=".//assets/imgs/persons/marcus-bennett.jpg" alt="" />
+        <img src="./assets/imgs/persons/marcus-bennett.jpg" alt="" />
         <h2>{{ secondPerson.firstname }} {{ secondPerson.lastname }}</h2>
         <p>
           {{ secondPerson.gender === 'female' ? 'She' : 'He' }} is a {{ secondPerson.age }}-year-old
@@ -98,7 +98,7 @@ const fourthPerson = {
         <div class="fav"><font-awesome-icon :icon="['fas', 'heart']" /></div>
       </div>
       <div>
-        <img src=".//assets/imgs/persons/sophia-rodriguez.jpg" alt="" />
+        <img src="./assets/imgs/persons/sophia-rodriguez.jpg" alt="" />
         <h2>{{ thirdPerson.firstname }} {{ thirdPerson.lastname }}</h2>
         <p>
           {{ thirdPerson.gender === 'female' ? 'She' : 'He' }} is a {{ thirdPerson.age }}-year-old
@@ -116,7 +116,7 @@ const fourthPerson = {
         <div class="fav"><font-awesome-icon :icon="['fas', 'heart']" /></div>
       </div>
       <div>
-        <img src=".//assets/imgs/persons/olivier-hughes.jpg" alt="" />
+        <img src="./assets/imgs/persons/olivier-hughes.jpg" alt="" />
         <h2>{{ fourthPerson.firstname }} {{ fourthPerson.lastname }}</h2>
         <p>
           {{ fourthPerson.gender === 'female' ? 'She' : 'He' }} is a {{ fourthPerson.age }}-year-old
@@ -160,11 +160,11 @@ main {
 
 img {
   width: 100%;
-  max-height: 45%;
+  aspect-ratio: 16/10;
   border-radius: 5px;
   margin-bottom: 20px;
   object-fit: cover;
-  object-position: center top;
+  object-position: top;
 }
 .fav {
   position: absolute;
