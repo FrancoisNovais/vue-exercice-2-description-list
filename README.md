@@ -1,35 +1,7 @@
-# vue-exercice-2-description-list
+# Exercice Vue.js : Liste Dynamique de Descriptions
 
-This template should help get you started developing with Vue 3 in Vite.
+Le but de ce projet est de manipuler des valeurs dynamiques en affichant une liste de descriptions, où chaque élément des descriptions sont contenue dans un objet.
 
-## Recommended IDE Setup
+## Description
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Ce projet consiste à créer une application Vue.js qui affiche une liste de quatre descriptions. Chaque elements des descriptions sont contenue dans un objet, et les données sont rendues dynamiquement dans l'application.
