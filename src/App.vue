@@ -63,54 +63,70 @@ const fourthPerson = {
       <div>
         <img src=".//assets/imgs/persons/emily-parker.jpg" alt="" />
         <h2>{{ firstPerson.firstname }} {{ firstPerson.lastname }}</h2>
-        <p>She is a {{ firstPerson.age }}-year-old {{ firstPerson.job }}.</p>
+        <p>
+          {{ firstPerson.gender === 'female' ? 'She' : 'He' }} is a {{ firstPerson.age }}-year-old
+          {{ firstPerson.job.toLowerCase() }}.
+        </p>
         <p>
           Outsise of work, {{ firstPerson.firstname }} likes to {{ firstPerson.hobbies[0] }} and
           {{ firstPerson.hobbies[1] }}.
         </p>
         <p>
-          At home, her lively companion is {{ firstPerson.pet.name }} a
-          {{ firstPerson.pet.age }}-years-old {{ firstPerson.pet.species }}.
+          At home, {{ firstPerson.gender === 'female' ? 'her' : 'his' }} lively companion is
+          {{ firstPerson.pet.name }} a {{ firstPerson.pet.age }}-years-old
+          {{ firstPerson.pet.species }}.
         </p>
       </div>
 
       <div>
         <img src=".//assets/imgs/persons/marcus-bennett.jpg" alt="" />
         <h2>{{ secondPerson.firstname }} {{ secondPerson.lastname }}</h2>
-        <p>He is a {{ secondPerson.age }}-year-old {{ secondPerson.job }}.</p>
+        <p>
+          {{ secondPerson.gender === 'female' ? 'She' : 'He' }} is a {{ secondPerson.age }}-year-old
+          {{ secondPerson.job.toLowerCase() }}.
+        </p>
         <p>
           Outsise of work, {{ secondPerson.firstname }} likes to {{ secondPerson.hobbies[0] }} and
           {{ secondPerson.hobbies[1] }}.
         </p>
         <p>
-          At home, her lively companion is {{ secondPerson.pet.name }} a
-          {{ secondPerson.pet.age }}-years-old {{ secondPerson.pet.species }}.
+          At home, {{ secondPerson.gender === 'female' ? 'her' : 'his' }} lively companion is
+          {{ secondPerson.pet.name }} a {{ secondPerson.pet.age }}-years-old
+          {{ secondPerson.pet.species }}.
         </p>
       </div>
       <div>
         <img src=".//assets/imgs/persons/sophia-rodriguez.jpg" alt="" />
         <h2>{{ thirdPerson.firstname }} {{ thirdPerson.lastname }}</h2>
-        <p>She is a {{ thirdPerson.age }}-year-old {{ thirdPerson.job }}.</p>
+        <p>
+          {{ thirdPerson.gender === 'female' ? 'She' : 'He' }} is a {{ thirdPerson.age }}-year-old
+          {{ thirdPerson.job.toLowerCase() }}.
+        </p>
         <p>
           Outsise of work, {{ thirdPerson.firstname }} likes to {{ thirdPerson.hobbies[0] }} and
           {{ thirdPerson.hobbies[1] }}.
         </p>
         <p>
-          At home, her lively companion is {{ thirdPerson.pet.name }} a
-          {{ thirdPerson.pet.age }}-years-old {{ thirdPerson.pet.species }}..
+          At home, {{ thirdPerson.gender === 'female' ? 'her' : 'his' }} lively companion is
+          {{ thirdPerson.pet.name }} a {{ thirdPerson.pet.age }}-years-old
+          {{ thirdPerson.pet.species }}..
         </p>
       </div>
       <div>
         <img src=".//assets/imgs/persons/olivier-hughes.jpg" alt="" />
         <h2>{{ fourthPerson.firstname }} {{ fourthPerson.lastname }}</h2>
-        <p>He is a {{ fourthPerson.age }}-year-old {{ fourthPerson.job }}.</p>
+        <p>
+          {{ fourthPerson.gender === 'female' ? 'She' : 'He' }} is a {{ fourthPerson.age }}-year-old
+          {{ fourthPerson.job.toLowerCase() }}.
+        </p>
         <p>
           Outsise of work, {{ fourthPerson.firstname }} likes to {{ fourthPerson.hobbies[0] }} and
           {{ fourthPerson.hobbies[1] }}.
         </p>
         <p>
-          At home, her lively companion is {{ fourthPerson.pet.name }} a
-          {{ fourthPerson.pet.age }}-years-old {{ fourthPerson.pet.species }}.
+          At home, {{ fourthPerson.gender === 'female' ? 'her' : 'his' }} lively companion is
+          {{ fourthPerson.pet.name }} a {{ fourthPerson.pet.age }}-years-old
+          {{ fourthPerson.pet.species }}.
         </p>
       </div>
     </div>
@@ -134,7 +150,6 @@ main {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-  height: 500px;
   width: 300px;
 }
 
