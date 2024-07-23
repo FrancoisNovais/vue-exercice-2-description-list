@@ -117,4 +117,33 @@ const fourthPerson = {
   </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards {
+  display: flex;
+}
+
+.cards div {
+  /* border: 1px solid red; */
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  height: 500px;
+  width: 300px;
+}
+
+img {
+  width: 100%;
+  max-height: 35%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  object-position: center top;
+}
+</style>
