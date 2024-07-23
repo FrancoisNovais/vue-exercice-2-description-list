@@ -76,6 +76,7 @@ const fourthPerson = {
           {{ firstPerson.pet.name }} a {{ firstPerson.pet.age }}-years-old
           {{ firstPerson.pet.species }}.
         </p>
+        <div class="fav"><font-awesome-icon :icon="['fas', 'heart']" /></div>
       </div>
 
       <div>
@@ -94,6 +95,7 @@ const fourthPerson = {
           {{ secondPerson.pet.name }} a {{ secondPerson.pet.age }}-years-old
           {{ secondPerson.pet.species }}.
         </p>
+        <div class="fav"><font-awesome-icon :icon="['fas', 'heart']" /></div>
       </div>
       <div>
         <img src=".//assets/imgs/persons/sophia-rodriguez.jpg" alt="" />
@@ -111,6 +113,7 @@ const fourthPerson = {
           {{ thirdPerson.pet.name }} a {{ thirdPerson.pet.age }}-years-old
           {{ thirdPerson.pet.species }}..
         </p>
+        <div class="fav"><font-awesome-icon :icon="['fas', 'heart']" /></div>
       </div>
       <div>
         <img src=".//assets/imgs/persons/olivier-hughes.jpg" alt="" />
@@ -128,6 +131,7 @@ const fourthPerson = {
           {{ fourthPerson.pet.name }} a {{ fourthPerson.pet.age }}-years-old
           {{ fourthPerson.pet.species }}.
         </p>
+        <div class="fav"><font-awesome-icon :icon="['fas', 'heart']" /></div>
       </div>
     </div>
   </main>
@@ -143,22 +147,36 @@ main {
   display: flex;
 }
 
-.cards div {
+.cards > div {
   /* border: 1px solid red; */
   margin: 10px;
   padding: 10px;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-  width: 300px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  width: 280px;
+  position: relative;
 }
 
 img {
   width: 100%;
-  max-height: 35%;
-  border-radius: 10px;
+  max-height: 45%;
+  border-radius: 5px;
   margin-bottom: 20px;
   object-fit: cover;
   object-position: center top;
+}
+.fav {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.fav svg {
+  font-size: 24px;
+  color: #7f7f7f;
+}
+.fav svg:hover {
+  font-size: 24px;
+  color: #000000;
 }
 </style>
